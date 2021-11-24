@@ -18,7 +18,10 @@ Een aantal opvallende dingen zijn naar voorgekomen tijdens het analyseren van de
 - Uit de analyse is ook gebleken dat een aantal VMs constant tegen de 100% CPU workload zit. Dit kan duiden op een runaway proces en moet mogelijk worden onderzocht.
 - Er zijn een aantal outliers te vinden waar het gemeten CPU verbruik een stuk hoger ligt dan de grote van de grootste CPU. Dit zou mogelijk kunnen komen door pieken waar de VM van op hol slaat of een fout in de export.
 
-## Machine Learning 🤖
+### Machine Learning 🤖
 Wat is er verder nodig om deze analyse automatisch te laten verrichten door middel van Machine Learning?
-
+Door de uitgevoerde analyse is er data set ontstaan die voor elke VM aangeeft of deze oversized is of niet.
+We hebben nu dus een gelabelde data set en kunnen supervised learning toepassen. Het label kan 1: oversized, of 0: niet oversized, zijn. 
+De data kan gesplitst worden in train en test data en er kunnen verschillende modellen getrained en geëvalueerd worden die binaire classificatie verichten.
+Als hier een goed presterend model uitkomt kan hier een api van gemaakt worden en worden toegevoegd aan het export script. Zo wordt er automatisch een advies bijgezet.
 
