@@ -8,7 +8,7 @@ Er zijn bruikbare meetgegevens aangeleverd van 4259 unieke VMs over een periode 
 - De ondergrens van de CPU workload is gedefinieerd op 20%. Als een VM gedurende de hele meetperiode onder 20% vermogen draait dan wordt deze gelabeld als oversized. Deze defenitie is variabel en kan worden aangepast naar wens. Niet alleen in ondergrens, maar ook pieken kunnen worden toegelaten in bepaalde mate waar de ondergrens gepasseerd wordt.
 - Voor elk meetmoment van elke VM wordt een label gemaakt of de ondergrens wordt overschreden of niet.
 - Voor elke VM wordt gekeken of gedurende de meetperiode de ondergrens gepasseerd is. Zo niet, dan krijgt deze het label oversized.
-- De lijst van VMs met label: 1, voor oversized en label: 0, anders, wordt geëxporteerd naar een CSV bestand. Deze is te vinden in de map **Data**.
+- De lijst van VMs met label: 1, voor oversized en label: 0, anders, is geëxporteerd naar een CSV bestand. Deze is te vinden in de map **Data**.
 
 ### Vreemde zaken
 Een aantal opvallende dingen zijn naar voorgekomen tijdens het analyseren van de data.
